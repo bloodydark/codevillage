@@ -1,0 +1,74 @@
+#concept {
+    background: linear-gradient(180deg, $smoke 50%, $grey 50%);
+    @include sp {
+        background: linear-gradient(180deg, $smoke 30%, $grey 70%);
+        height: 650px;
+    }
+}
+
+.concept__img {
+    height: 413px;
+    width: 100%;
+    display: flex;
+    @include sp {
+        height: 205px;
+    }
+&__left {
+    width: 63%;
+    background-image: url(../img/p2.png);
+    background-size: cover;
+    margin-right: 11px;
+    @include sp {
+        width: 50%;
+        background-position: right;
+    }
+}
+&__right {
+    width: 37%;
+    background-image: url(../img/p3.png);
+    background-size: cover;
+    @include sp {
+        width: 50%;
+        }
+    }
+}
+
+.concept-desc {
+    display: flex;
+    justify-content: space-between;
+    color:#fff;
+    width: 86%;
+    margin: 70px auto 0;
+    @include sp {
+        flex-direction: column;
+        width: 100%;
+        margin: 50px auto 0;
+    }
+    & h2 {
+        margin-top: 20px;
+        // width: 50%;
+        font-size: 4rem;
+        font-family: serif;
+        letter-spacing: 10px;
+        @include pc {
+            min-width: 450px;
+        }
+        @include sp {
+            width: 100%;
+            font-size: 1.8rem;
+            text-align: center;
+            margin: 0;
+        }
+    }
+    & p {
+        width: 40%;
+        letter-spacing: 1.6px;
+        
+        // font-size: 1.6rem;
+        // line-height: 2.7rem;
+        @include sp {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+}

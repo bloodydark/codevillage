@@ -1,0 +1,82 @@
+/////////////////
+///    変数   ///
+////////////////
+
+$smoke: #A193861F;
+$grey: #A193868A;
+$rose-grey: #707070;
+
+
+
+/////////////////
+/////mixin//////
+////////////////
+
+@mixin pc {
+    @media screen and (min-width: 960px) {
+        @content;
+    }
+}
+    
+@mixin  sp {
+    @media screen and (max-width: 600px){
+        @content;
+    }   
+}
+
+
+/////////////////
+/////全共通//////
+////////////////
+
+html {
+    font-size: 62.5%; // 10px
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.67;
+    // @include sp {
+    //     height: 4100px;
+    // }
+}
+
+
+.title {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 10px;
+    color:  $rose-grey;
+    @include sp {
+        margin-bottom: 50px;
+    }
+
+    &:after {
+        display: inline-block;
+        content: "";
+        border-top: 1px solid;
+        width: 99px;
+        color:$rose-grey;
+        margin-left: 2.3rem;
+        @include sp {
+            width: 45px;
+        }
+    }
+}
+
+
+
+.inner {
+    padding: 260px 0 70px;
+    width: 100% - 8.3% *2; //8.3%は両側の余白
+    margin: 0 auto;
+    // height: 950px;
+    @include sp {
+        padding: 60px 20px 0;
+        width: 100%;
+    }
+}
+
+
