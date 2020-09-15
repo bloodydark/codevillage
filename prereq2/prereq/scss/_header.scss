@@ -1,0 +1,122 @@
+header {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	width: 100%;
+	padding: 70px;
+	position: absolute;
+	z-index: 15;
+	@include sp {
+		position: relative;
+		padding: 20px;
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.hd-logo{
+	font-size: 3.8rem;
+	font-weight: 500;
+	padding-right: 20px;
+	@include sp {
+		font-size: 2.2rem;
+	}
+}
+
+.hd-nav {
+	// margin-right: 200px;
+	width: 40%;
+	& a:hover{
+		text-decoration: underline;
+		color: #45bcef;
+		transition: .3s;
+	}
+	@include sp {
+		display: none;
+	}
+
+
+	ul {
+	   display: flex;
+	   justify-content: space-between;
+	   align-items: center;
+	   font-size: 1.8rem;
+	   color: $rose-grey;
+	   
+	}
+}
+
+
+
+.menuButton {
+	// display: none;
+	@include sp {
+		width: 50px;
+		height: 50px;
+		// background-color: pink;
+		position: relative;
+		& div {
+			height: 1px;
+			width: 60%;
+			background: #333;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			transition: .3s;
+		}
+		& div:nth-last-of-type(1) {
+			transform: translate(-50%, -15px);
+			transform-origin: 0% 50%;
+		}
+		& div:nth-last-of-type(3) {
+			transform: translate(-50%, 15px);
+		}
+		&.active div:nth-last-of-type(1) {
+			transform: rotate(45deg) translate(-50%, 0);
+		}
+		&.active div:nth-last-of-type(2) {
+			// opacity: 0;
+			// transform: translate(0%, -50%);
+			width: 80%;
+			height: 80%;
+			border: 1px solid #333;
+			background-color: transparent;
+		}
+		
+		&.active div:nth-last-of-type(3) {
+			transform: rotate(-45deg) translate(-50%, 0);
+			transform-origin: 0% 50%;
+		}
+	}
+}
+
+nav-sec {
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s;
+	box-shadow: 0 0 10px #333;
+	color: $rose-grey;
+	& a:hover {
+		text-decoration: underline;
+		color: #45bcef;
+		transition: .3s;
+	}
+	// position: fixed;
+	// top: 0;
+	// right: 0;
+	// width: 300px;
+	// height: 500px;
+}
+
+nav-sec.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+// .mask {
+// 	width: 100%;
+// 	height: 100%;
+// 	background-color: #000;
+// 	opacity: 0.5;
+// }

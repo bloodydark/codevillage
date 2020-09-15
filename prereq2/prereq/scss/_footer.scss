@@ -1,0 +1,84 @@
+footer {
+    height: 340px;
+    @include sp {
+        height: 260px;
+    }
+}
+.ft-inner {
+     padding: 100px 0 60px;
+    width: 100% - 8.3% *2; //8.3%は両側の余白
+    // height: 950px;
+    margin: 0 auto;
+    @include sp {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+
+.ft-border {
+    height: 0.75px;
+    background-color: grey;
+    border:1px solid #70707036;
+    width: 100%;
+    border:none;
+    opacity: 0.5;
+}
+
+.ft-wrap {
+    display: flex;
+    justify-content: space-between;
+    // align-items: flex-end;
+    padding: 84px 0 62px;
+    @include sp {
+        flex-direction: column-reverse;
+    }
+}
+
+.ft-left {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 30px;
+    @include sp {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 0;
+        // display: flex;
+        // align-items: flex-end;
+    }
+}
+
+.ft-logo {
+    font-size: 3.2rem;
+    color: #7070704D;
+    margin-right: 30px;
+    @include sp {
+        font-size: 1.8rem;
+
+
+    }
+}
+
+.ft-icon {
+    font-size: 25px;
+    @include sp {
+        // display: flex;
+        // justify-content: right;
+    }
+}
+
+
+.ft-right {
+    display: inline-block;
+	border: 1px solid grey;
+	padding: 10px 40px;
+	font-weight: bold;
+	background-color: #fff;
+    color: grey;
+    @include sp {
+        text-align: center;
+        width: 180px;
+        height: 35px;
+        margin: 0 auto 60px;
+    }
+}
