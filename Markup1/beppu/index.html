@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+    <main>
+        <section id ="first-v">
+            <div class="fv-pic">
+                <img class="tonkatsu" src="./img/tonkatsu.png" alt="">
+            </div>
+            <div class="fv-info">
+                <h1 class="fv-title">別府亭<br><span>豚料理専門店</span></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#picky">こだわり</a></li>
+                        <li><a href="#menu">お品書き</a></li>
+                        <li><a href="#access">アクセス</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="btn">
+                <p class="btn-logo">ご予約はこちら</p>
+            </button>
+        </section>
+
+        <section id ="picky">
+            <div class="inner">
+                <div class="title">
+                    <h1>こだわり</h1>
+                </div>
+                <div class="desc">
+                    <p>別府亭は、宮崎県に自社経営の農場「<span>別府ファーム</span>」を所有しています。<br>
+                    めいっぱいの愛情を込めて育て、一匹一匹泣きながら屠殺しています。<br>
+                緑の中で元気いっぱいに育った栄養たっぷりの豚肉を、どうぞお召し上がりください。</p>
+                </div>
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide slide1"></div>
+                        <div class="swiper-slide slide2"></div>
+                        <div class="swiper-slide slide3"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id ="menu">
+            <div class="inner">
+                <div class="title">
+                    <h1>お品書き</h1>
+                </div>
+                <p class="menu-info">あらゆる豚料理をご用意しております。ぜひご賞味ください。</p>
+                <div class="img-wrap-a">
+                    <img src="./img/menu1.png" alt="">
+                    <img src="./img/menu4.png" alt="">
+                </div>
+                <div class="img-wrap-b">
+                    <img src="./img/menu2.png" alt="">
+                    <img src="./img/menu3.png" alt="">
+                </div>
+                
+            </div>
+        </section>
+
+        <section id ="access">
+            <div class="map-wrap">
+                <div class="title">
+                    <h1>アクセス</h1>
+                </div>
+                <div class="map-info">
+                    <p>東京都池袋123-4-5ベップビル34階<br>池袋駅から徒歩10秒</p>
+                </div>
+                <div class="map">
+                    <iframe class="map-pic" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.8664534331306!2d139.70871141521718!3d35.72950278018314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d5d4043e0dd%3A0x213775d25d2b034d!2z5rGg6KKL6aeF!5e0!3m2!1sja!2sjp!4v1603163045548!5m2!1sja!2sjp" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <small>Copyright © Beppu Corporation.All Rights Reserved.</small>
+    </footer>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

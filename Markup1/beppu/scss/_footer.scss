@@ -1,0 +1,17 @@
+footer {
+    height: 269px;
+
+    small {
+        display: block;
+        text-align: center;
+
+        &::before {
+        display: block;
+        content: "";
+        width: 1093px;
+        border-bottom: 1px solid #fff;
+        margin: 2rem auto 70px;
+        }
+    }
+}
+

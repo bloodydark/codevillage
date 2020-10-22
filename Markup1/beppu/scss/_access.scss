@@ -1,0 +1,55 @@
+#access {
+    height: 689px;
+    @include sp {
+        height: 800px;
+    }
+}
+
+.map-wrap {
+    position: relative;
+    height: 519px;
+    @include sp {
+        // position: static;
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+        margin: 0 50px;
+    }
+}
+
+.map-info {
+    background-color: $crim;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 76%;
+    height: 60%;
+    @include sp {
+        width: 100%;
+    }
+    p {
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 40px;
+        padding: 150px 600px 97px 50px;
+        @include sp {
+            padding: 250px 0 10px 0;
+        }
+    }
+}
+
+.map-pic {
+    position: absolute;
+    width: 68%;
+    height: 60%;
+    right: 0;
+    bottom: 13%;
+    box-shadow: 3px 3px 40px black;
+    @include sp {
+        box-shadow: none;
+        bottom: 30%;
+        height: 320px;
+        width: 100%;
+    }
+}
+

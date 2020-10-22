@@ -1,0 +1,91 @@
+#first-v {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+}
+
+.fv-pic {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60.5%;
+    height: 73.2%;
+    background-color: $crim;
+    img {
+        position: absolute;
+        transform: translate(-24%, -10%);
+        @include sp {
+            width: 500px;
+            height: 500px;
+            transform: translate(-40%,-5%);
+        }
+    }
+}
+
+.fv-info {
+    padding-left: 200px;
+    .fv-title {
+        writing-mode: vertical-lr;
+        position: relative;
+        padding: 160px 0;
+        font-size: 4rem;
+        letter-spacing: 15px;
+        @include sp {
+            padding-top: 80px;
+        }
+        span {
+            font-size: 1.6rem;
+            position: absolute;
+            transform: translate(10%, -30%);
+        }
+    }
+}
+
+nav ul {
+    position: relative;
+    z-index: 100;
+    font-size: 1.8rem;
+    width: 75px;
+    & li:not(:nth-child(1)) {
+        margin-top: 40px;
+    }
+    & li:hover {
+        color: aqua;
+        cursor: pointer;
+        transition: .3s;
+    }
+    
+}
+
+.btn {
+    border: none;
+    position: fixed; //ボタンを左下に固定
+    left: 0;
+    bottom: 0;
+    background-color: $crim;
+    width: 8rem;
+    height: 25rem;
+    color: white;
+    z-index: 100;
+    @include sp {
+        height: 150px;
+        width: 50px;
+    }
+    &:hover {
+        cursor: pointer;
+        color: aqua;
+    }
+    p {
+        padding: 35px 23px;
+        border: 1px solid white;
+        writing-mode: vertical-lr;
+        margin: 0 auto;
+        letter-spacing: 10px;
+        @include sp {
+            font-size: 1rem;
+            padding: 0 10px;
+        }
+    }
+}

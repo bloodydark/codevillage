@@ -1,0 +1,62 @@
+//////////////////////
+//      変数     ////
+////////////////////
+$crim : #800000;
+
+
+//////////////////////
+//      mixin      ////
+////////////////////
+@mixin  pc  {
+    @media screen and (min-width: 958px) {
+        @content;
+    }
+}
+@mixin tab {
+    @media screen and (max-width: 959px){
+        @content;
+    }
+}
+@mixin sp {
+    @media screen and (max-width: 600px){
+        @content;
+    }
+}
+
+//////////////////////
+//      共通     ////
+////////////////////
+html {
+    font-size: 62.5%;  //10px
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 12px;
+    line-height: 1.67;
+    background-color: black;
+    color: white;
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: bold;
+    @include sp {
+        font-size: 3rem;
+    }
+    &:after {
+        display: block;
+        content: "";
+        width: 7rem;
+        border-bottom: 1px solid #fff;
+        margin: 2rem auto 0;
+    }
+}
+
+.inner {
+    width: 100% - (6% * 2); //6%は両側の余白
+    margin: 0 auto;
+    height: 776px;
+}
