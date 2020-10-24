@@ -1,65 +1,61 @@
 #picky {
-    height: 945px;
-    .inner {
-        position: relative;
-        .title {
-            margin-bottom:70px;
-        }
+  .inner {
+    position: relative;
+    .title {
+      margin-bottom: 70px;
     }
+  }
 }
 
 .desc {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 59.5%;
-    background-color: $crim;
-    p {
-        padding-top: 250px;
-        text-align: center;
-        font-size: 2rem;
-        line-height: 50px;
-        @include sp {
-            font-size: 1rem;
-        }
-        span {
-            font-size: 2.5rem;
-            @include sp {
-                font-size: 1.5rem;
-            }
-        }
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 59.5%;
+  background-color: $crim;
+  p {
+    padding-top: 250px;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 50px;
+    @include sp {
+      font-size: 1rem;
     }
-
+    span {
+      font-size: 2.5rem;
+      @include sp {
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
-
 
 /////swipeライブラリ/////
 
 .swiper-container {
-    width: 80%; 
-    height: 50%;
-    margin: 0 auto;
-    position: relative;
-    // background-color: white;
-    box-shadow: 3px 3px 40px rgb(184, 177, 177);
-    
-    }
-    .swiper-slide {
-        position: absolute;
-        z-index: 100;
-        height: 100%;
-        /* width: 500px; */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    
-    .swiper-slide.slide1 {
-        background-image: url(../img/img1.jpg);
-    }
-    .swiper-slide.slide2 {
-        background-image: url(../img/img2.jpg);
-    }
-    .swiper-slide.slide3 {
-        background-image: url(../img/img3.jpg);
-    }
+  width: 80%;
+  height: 50%;
+  margin: 0 auto;
+  position: relative;
+  // background-color: white;
+  box-shadow: 3px 3px 40px rgb(184, 177, 177);
+}
+.swiper-slide {
+  position: absolute;
+  z-index: 100;
+  height: 100%;
+  /* width: 500px; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.swiper-slide.slide1 {
+  background-image: url(../img/img1.jpg);
+}
+.swiper-slide.slide2 {
+  background-image: url(../img/img2.jpg);
+}
+.swiper-slide.slide3 {
+  background-image: url(../img/img3.jpg);
+}

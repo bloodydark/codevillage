@@ -1,17 +1,19 @@
 footer {
-    height: 269px;
-
-    small {
-        display: block;
-        text-align: center;
-
-        &::before {
-        display: block;
-        content: "";
-        width: 1093px;
-        border-bottom: 1px solid #fff;
-        margin: 2rem auto 70px;
-        }
+  margin-bottom: 79px;
+  .inner2 {
+    width: 84%;
+    margin: 0 auto;
+  }
+  p {
+    height: 88.5px;
+    width: 100%;
+    border-top: rgba(255, 255, 255, 0.5) solid 1px;
+    opacity: 1;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 177px;
+    @include sp {
+      font-size: 1rem;
     }
+  }
 }
-
