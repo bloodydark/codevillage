@@ -146,6 +146,10 @@ body {
   height: 776px;
 }
 
+img {
+  object-fit: cover;
+}
+
 #first-v {
   height: 100vh;
   display: flex;
